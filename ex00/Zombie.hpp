@@ -6,7 +6,7 @@
 /*   By: eltouma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 11:32:28 by eltouma           #+#    #+#             */
-/*   Updated: 2024/08/14 12:26:40 by eltouma          ###   ########.fr       */
+/*   Updated: 2024/08/15 18:34:05 by eltouma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ class 	Zombie
 {
 	std::string _name;
 
-
 public:
+	Zombie(void);
 	Zombie(std::string name);
 	~Zombie(void);
 	void	announce(void);
