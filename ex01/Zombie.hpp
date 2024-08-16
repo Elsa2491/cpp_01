@@ -6,7 +6,7 @@
 /*   By: eltouma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 11:32:28 by eltouma           #+#    #+#             */
-/*   Updated: 2024/08/15 18:56:33 by eltouma          ###   ########.fr       */
+/*   Updated: 2024/08/16 15:02:42 by eltouma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <iostream>
 # include <string>
+
+# define NB 5
 
 class 	Zombie 
 {

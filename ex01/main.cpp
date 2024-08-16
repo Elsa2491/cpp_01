@@ -6,7 +6,7 @@
 /*   By: eltouma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 11:31:20 by eltouma           #+#    #+#             */
-/*   Updated: 2024/08/15 19:00:50 by eltouma          ###   ########.fr       */
+/*   Updated: 2024/08/16 15:01:17 by eltouma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,8 @@ Zombie::~Zombie(void)
 
 int	main(void)
 {
-	int	nb;
-
-	nb = 5;
-	Zombie *zombie = zombieHorde(nb, "John");
-	for (int i = 0; i < nb; i++)
+	Zombie *zombie = zombieHorde(NB, "John");
+	for (int i = 0; i < NB; i++)
 		zombie[i].announce();
 	delete [] zombie;
 }
