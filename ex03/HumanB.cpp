@@ -6,7 +6,7 @@
 /*   By: eltouma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 16:54:02 by eltouma           #+#    #+#             */
-/*   Updated: 2024/08/16 17:52:22 by eltouma          ###   ########.fr       */
+/*   Updated: 2024/08/16 18:03:16 by eltouma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ void	HumanB::attack(void)
 	if (this->_weapon != NULL)
 		std::cout << this->_name << " attacks with their " << this->_weapon->getType() << std::endl;
 	else
-		std::cout << this->_name << " attacks with their bare hands"  << std::endl;
+		std::cout << this->_name << " attacks with their... My bad, an error has occured but the error message cannot be retrieved due to another error."  << std::endl;
 }
