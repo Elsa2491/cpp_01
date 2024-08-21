@@ -6,14 +6,11 @@
 /*   By: eltouma <eltouma@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 12:42:33 by eltouma           #+#    #+#             */
-/*   Updated: 2024/08/21 16:19:34 by eltouma          ###   ########.fr       */
+/*   Updated: 2024/08/21 17:05:44 by eltouma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <fstream>
-#include <cstdlib>
-#include <cstring>
+#include "main.hpp"
 
 int main(int argc, char **argv)
 {
