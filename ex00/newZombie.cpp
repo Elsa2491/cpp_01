@@ -6,13 +6,30 @@
 /*   By: eltouma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 11:52:09 by eltouma           #+#    #+#             */
-/*   Updated: 2024/08/15 16:58:16 by eltouma          ###   ########.fr       */
+/*   Updated: 2024/08/23 14:28:48 by eltouma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
+// Dynamic allocation -> heap
 Zombie* newZombie(std::string name)
 {
-	return (new Zombie(name));
+	try
+	{
+		return (new Zombie(name));
+	}
+	catch (std::bad_alloc& ba)
+	{
+		std::cerr << "bad_alloc caught: " << ba.what() << std::endl;
+		return (NULL);
+	}
 }
+
+/*
+Zombie* newZombie(std::string name)
+{
+	Zombie	*zombie = new Zombie(name);
+	return (zombie);
+}
+*/
