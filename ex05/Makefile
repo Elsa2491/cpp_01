@@ -1,4 +1,4 @@
-NAME = harl
+NAME = Harl
 
 CC = c++ -Wall -Wextra -Werror -std=c++98
 MAKEFLAGS += --no-print-directory
@@ -18,12 +18,12 @@ $(OBJS_PATH)%.o: %.cpp
 	$(CC) -c $< -o $@
 
 $(NAME): $(OBJS)
-	@echo "\nCompilation harl: $(GREEN)success$(RESET)\n"
+	@echo "\nCompilation Harl: $(GREEN)success$(RESET)\n"
 	$(CC) $(OBJS) -o $(NAME)
 
 clean:
 	/bin/rm -rf $(OBJS) $(OBJS_PATH)
-	@echo "\nReplace removed: $(GREEN)success$(RESET)\n"
+	@echo "\nHarl removed: $(GREEN)success$(RESET)\n"
 
 fclean:	clean
 	/bin/rm -rf ${NAME}
