@@ -6,7 +6,7 @@
 /*   By: eltouma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 11:31:20 by eltouma           #+#    #+#             */
-/*   Updated: 2024/08/24 15:08:46 by eltouma          ###   ########.fr       */
+/*   Updated: 2024/08/27 11:44:17 by eltouma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	main(void)
 {
 	std::string	brain;
 	std::string	*stringPTR = &brain;
-	std::string	&stringREF = *stringPTR;
+	std::string	&stringREF = brain;
 
 	brain = "HI THIS IS BRAIN";
 	std::cout << "Address in memory of string:\t\t\t" << &brain << std::endl;
