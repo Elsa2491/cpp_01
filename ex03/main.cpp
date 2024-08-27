@@ -6,7 +6,7 @@
 /*   By: eltouma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 13:31:09 by eltouma           #+#    #+#             */
-/*   Updated: 2024/08/23 14:40:34 by eltouma          ###   ########.fr       */
+/*   Updated: 2024/08/24 15:15:59 by eltouma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 
-int main()
+int	main(void)
 {
     {
         Weapon club = Weapon("crude spiked club");

@@ -6,13 +6,12 @@
 /*   By: eltouma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 11:52:09 by eltouma           #+#    #+#             */
-/*   Updated: 2024/08/23 14:28:48 by eltouma          ###   ########.fr       */
+/*   Updated: 2024/08/24 16:44:41 by eltouma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-// Dynamic allocation -> heap
 Zombie* newZombie(std::string name)
 {
 	try

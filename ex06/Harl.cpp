@@ -6,7 +6,7 @@
 /*   By: eltouma <eltouma@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 17:19:25 by eltouma           #+#    #+#             */
-/*   Updated: 2024/08/23 17:51:13 by eltouma          ###   ########.fr       */
+/*   Updated: 2024/08/24 16:41:36 by eltouma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,21 +42,33 @@ void	Harl::error(void)
 
 void	Harl::complain(std::string level)
 { 
-	void (Harl::*display[COMPLAIN_NB])() =
+	int	level_count;
+
+	level_count = 0;
+	if (level == "DEBUG") level_count = 1;
+	if (level == "INFO") level_count = 2;
+	if (level == "WARNING") level_count = 3;
+	if (level == "ERROR") level_count = 4;
+	switch (level_count)
 	{
-		&Harl::debug,
-		&Harl::info,
-		&Harl::warning,
-		&Harl::error
-	};
-	std::string levelPtr[COMPLAIN_NB] =
-	{
-		"DEBUG",
-		"INFO",
-		"WARNING",
-		"ERROR",
-	};
-	for (int i = 0; i < COMPLAIN_NB; i++)
-		if (!strcmp(levelPtr[i].c_str(), level.c_str()))
-			(this->*display[i])();
+		case 1:
+			std::cout << "[ DEBUG ]\n";
+			debug();
+			std::cout << std::endl;
+		case 2:
+			std::cout << "[ INFO ]\n";
+			info();
+			std::cout << std::endl;
+		case 3:
+			std::cout << "[ WARNING ]\n";
+			warning();
+			std::cout << std::endl;
+		case 4:
+			std::cout << "[ ERROR ]\n";
+			error();
+			break ;
+		default:
+			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+			break ;
+	}
 }

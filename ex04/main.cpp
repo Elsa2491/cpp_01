@@ -6,13 +6,13 @@
 /*   By: eltouma <eltouma@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 12:42:33 by eltouma           #+#    #+#             */
-/*   Updated: 2024/08/23 16:21:55 by eltouma          ###   ########.fr       */
+/*   Updated: 2024/08/24 15:18:02 by eltouma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "replace.hpp"
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	std::string outfile_name; 
 
