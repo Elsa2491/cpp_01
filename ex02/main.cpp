@@ -6,7 +6,7 @@
 /*   By: eltouma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 11:31:20 by eltouma           #+#    #+#             */
-/*   Updated: 2024/08/27 11:44:17 by eltouma          ###   ########.fr       */
+/*   Updated: 2024/08/27 13:12:07 by eltouma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int	main(void)
 {
 	std::string	brain;
 	std::string	*stringPTR = &brain;
-	std::string	&stringREF = *stringPTR;
+	std::string	&stringREF = brain;
 
 	brain = "HI THIS IS BRAIN";
 	std::cout << "Address in memory of string:\t\t\t" << &brain << std::endl;
@@ -67,5 +67,32 @@ int	main(void)
 	std::cout << "Display the string using the pointer:\t" << *stringPTR << std::endl;
 	std::cout << "Display the string using the reference:\t" << stringREF << std::endl;
 
+}
+*/
+
+
+/*
+//Test avec des ints
+
+int	main(void)
+{
+ 	int     brain;
+        int     &intREF = brain;
+ 	int     brain1;
+        int     *intPTR = &brain;
+
+        brain = 0;
+	brain1 = 0;
+        std::cout << "Display the int using the reference:\t" << intREF << std::endl;
+        std::cout << "Display the int using brain:\t" << brain << std::endl;
+        intREF++;
+        std::cout << "Display the int using brain:\t" << brain << std::endl;
+        std::cout << "Display the int using the reference:\t" << intREF << std::endl;
+	std::cout << std::endl;
+        std::cout << "Display the int using the pointeur:\t" << *intPTR << std::endl;
+        std::cout << "Display the int using brain1:\t" << brain1 << std::endl;
+        intPTR++;
+        std::cout << "Display the int using brain1:\t" << brain1 << std::endl;
+        std::cout << "Display the int using the pointeur:\t" << *intPTR << std::endl;
 }
 */
